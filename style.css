@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.menu{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+.menu.sticky{
+    background: black;
+    padding: 0px 5px
+}
+.menu .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+.menu .navbar a{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu .navbar a:hover{
+    color: orangered;
+    transition: ease-in-out;
+}
+.menu_btn{
+    color: #ccc;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo h1{
+    font-size: 1.8rem;
+    color: aliceblue;
+    text-align: center;
+}
+.logo img{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 5px;   
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 20px;
+    background: url(/images/sven-mieke-MsCgmHuirDo-unsplash.jpg);
+    background-size:cover;
+    text-align: center;
+    font-weight: 400;
+    color: antiquewhite;
+    line-height: 1.5;
+}
+.container p{
+    font-size: 1.7rem;
+}
+.container .heading span{
+    font-size: 40px;
+    font-weight: bold;
+    color: orangered;
+}
+.container .heading h1{
+    color: rgb(167, 84, 54);
+}
+.container .heading .comming{
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+.container .heading .btn{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    border: none;
+    background-color: orangered;
+    color: aliceblue;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.container .heading .btn:hover{
+    letter-spacing: 4px;
+}
+.about{
+    width: 100%;
+    background-color: black;
+    padding: 40px;
+}
+h1{
+    color: rgb(93, 119, 99);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    width: 100%;
+}
+span{
+    font-size: 3rem;
+    font-weight: bold;
+    color: orangered;
+}
+.about_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:radial-gradient(black, grey);
+    border-radius: 30px;
+    padding: 50px;
+}
+.about_left{
+    flex-basis: 50%;
+    text-align: center;
+}
+.about_left img{
+    width: 60%;
+    height: 37.5rem;
+    border-radius: 20px;
+}
+.about_right{
+    flex-basis: 50%;
+}
+.about_right{
+    max-width: 400px;
+    margin: auto;
+}
+.about_right h2{
+    font-size: 1.8rem;
+    color: antiquewhite
+}
+.about_right p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 15px 0;
+    color: aliceblue;
+}
+.about_right .btn{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.membership_details{
+    width: 100%;
+}
+.membership{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background: radial-gradient(black, rgb(165, 139, 139));
+}
+.membership_left_col{
+    flex-basis: 50%;
+}
+.membership_left_col{
+    max-width: 400px;
+}
+.membership_right_col{
+    flex-basis: 50%;
+    text-align: center;
+}
+.membership_right_col img{
+    width: 60%;
+    height: 31.2rem;
+    border-radius: 20px;
+}
+.membership_left_col h2{
+    font-size: 2.5rem;
+    color: antiquewhite
+}
+.membership_left_col p{
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: bold;
+    margin: 15px 0;
+    color: rgb(181, 67, 67);
+    letter-spacing: 5px;
+}
+.membership_left_col .btn{
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service{
+    width: 100%;
+    background-color: black;
+    padding: 40px;
+}
+.service_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    background:radial-gradient(black, grey);
+    border-radius: 30px;
+    padding: 50px;
+}
+.service_row .boxes{
+    width: 25rem;
+    background:linear-gradient( rgb(165, 139, 139),black);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(61, 60, 60);
+}
+.service_row .boxes p{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(69, 60, 60);
+    padding:20px 0;
+}
+.png_img{
+    text-align: center;
+}
+.service_row .boxes img{
+    width: 9.3rem;
+    height: 9.3rem;
+}
+.service_row .boxes .discription{
+    font-size: 1.2rem;
+    padding: 20px 5px;
+    text-align: center;
+    color: rgb(227, 213, 196);
+}
+.trainer{
+    width: 100%;
+    padding-bottom: 50px;
+    background:radial-gradient(black, rgb(165, 139, 139));
+}
+.card_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    row-gap: 20px;
+}
+.trainer .card{
+    width: 18.7rem;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.trainer .card .image_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.trainer .card .image_section .image{
+    width: 9.3rem;
+    height: 9.3rem;
+    border-radius: 50%;
+    padding: 3px;
+    background-color:rgb(93, 119, 99);;
+}
+.trainer .card .image_section .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.trainer .card .details_section{
+    text-align: center;
+    padding: 20px;
+}
+.gallery{
+    width: 100%;
+    background-color: black;
+    padding: 40px;
+}
+.gallery_row h1{
+    color: rgb(93, 119, 99);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    width: 100%;
+}
+.gallery_row{
+    background: radial-gradient(black, grey);
+    padding: 30px;
+    border-radius: 30px;
+    padding: 50px;
+}
+.gallery_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.gallery_section .images{
+    width: 22rem;
+    height: 16rem;
+}
+.gallery_section img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.contact_us{
+   width: 100%; 
+   background: url(/images/luis-vidal-FodEsaNZs48-unsplash.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.contact_row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.contact_details{
+    border: 2px solid antiquewhite;
+    box-shadow: 0 0 10px wheat;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+.contact_details h1{
+    color: antiquewhite;
+}
+.contact_details p{
+    color:  rgb(167, 84, 54);
+    font-size: 24px;
+    font-weight: bold;
+}
+.contact_icon i{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.contact_icon em{
+    font-size: 1.3rem;
+    color: antiquewhite;
+    margin: 0 5px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+}
+fieldset{
+    background:transparent;
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.c_btn{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: aqua;
+    color:white;
+    padding: 12px 20px;
+    margin: 20px 0;
+}
+.footer_details{
+    width: 100%;
+    padding-bottom: 20px;
+    background:linear-gradient( rgba(255, 68, 0, 0.633), black);
+}
+.footer_details .footer_row{
+    padding-top: 50px;
+}
+.box_one a{
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer_details .footer_row .box_one a:hover{
+    color: rgb(176, 101, 44);
+    cursor: pointer;
+    transition: ease-in-out;
+}
+.footer_details .footer_row .box_one a{
+    font-weight: bold;
+    color: antiquewhite;
+}
+.footer_details .footer_row2{
+    text-align: center;
+}
+.footer_details .footer_row .box_two i{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.8rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.footer_details .footer_row .box_two .instagram:hover{
+    color: rgb(213, 32, 63);
+    opacity: 2;
+    cursor: pointer;
+}
+.footer_details .footer_row .box_two .facebook:hover{
+    color: blue;
+    opacity: 2;
+    cursor: pointer;
+}
+.footer_details .footer_row .box_two .twitter:hover{
+    color: rgb(40, 136, 157);
+    opacity: 2;
+    cursor: pointer;
+}
+.footer_details .footer_row .box_two .youtube:hover{
+    color: red;
+    opacity: 2;
+    cursor: pointer;
+}
+.box_one{
+    text-align: center;
+}
+.box_two{
+    text-align: center;
+    color: #ccc;
+    margin: 20px 0;
+}
+.box_three{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width:900px){
+    .menu_btn{
+        display: block;
+        cursor:pointer;
+        width: 1.8rem;
+        background: #fff;
+        margin: 6px 0;
+        z-index: 999;
+    }
+    .navbar{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        width: 100vw;
+        background: black;
+        transition: 0.2s;
+        overflow: hidden;
+        /* opacity: 0; */
+    }
+    /* .menu_btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+        
+    } */
+    .navbar.active{
+        right: 0;
+    }
+    .navbar a{
+        width: fit-content;
+        margin: 80px auto 10px auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width:700px){
+    .about_left{
+        display: none;
+    }
+    .membership_right_col{
+        display: none;
+    }
+}
